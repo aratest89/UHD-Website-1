@@ -9,13 +9,15 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 
 }
-.navbar{
+.main-navbar{
     width: 100%;
     height: 75px;
     display: flex;
     justify-content: space-around;
     background-color: black;
 }
+
+/* logo name design */
 
 .logo a{
     text-decoration: none;
@@ -24,7 +26,6 @@ body{
     margin-left: 20px;
 }
 .logo a:hover{
-    cursor: pointer;
     color: white;
 }
 
@@ -61,11 +62,12 @@ list-style: none;
     align-items: center;
     margin-right: 20px;   
 }
-.sr{
+.search-input{
     width: 100%;
     padding: 4px;
     background: none;
     color: white;
+    border: 1px solid yellow;
 }
 .search button{
     background-color: yellow;
@@ -78,7 +80,7 @@ list-style: none;
 
 /* intro text */
 
-.main{
+.main-introtext-buttons{
 display: flex;
 padding: 40px 20px 0 100px;
 }
@@ -91,6 +93,8 @@ padding: 40px 20px 0 100px;
     color: white;
     font-size: 20px;
 }
+
+/* login&signup buttons */
 
 .login-signup{
     margin-top: 17px;
@@ -115,11 +119,11 @@ padding: 40px 20px 0 100px;
 }
 
 /* Best of 2024 */
-.Best{
+.main-Bestof2024{
     margin-top: 150px;
 }
 
-.Best h2{
+.main-Bestof2024 h2{
     clear: both;
     color: white;
     margin-left: 100px;  
@@ -235,7 +239,7 @@ padding: 40px 20px 0 100px;
     
 }
 
-/* bottom mavbar */
+/* bottom navbar */
 
 .bottom-navbar h3{
     color: white;
@@ -247,6 +251,11 @@ padding: 40px 20px 0 100px;
     color: yellow;
     padding-left: 15px;
 }
+
+.bottom-navbar .ul-bottom1 a:hover{
+    color: white;
+}
+
 .bottom-navbar .li-bottom1{
     padding-top: 10px;
 }
@@ -269,9 +278,78 @@ padding: 40px 20px 0 100px;
     padding-right: 200px; 
 }
 
+.socialmedia .ul-bottom2 a:hover{
+    color: white;
+}
+
 .socialmedia .li-bottom2{
     padding-top: 10px;
 }
 
-/* responsable for mobile */
+@media screen and (max-width: 480px){
 
+
+    .main-navbar{
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .main-navbar.menu li{
+        flex-wrap: wrap;
+    }
+
+    .main-introtext-buttons{
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 0%;
+        margin: 20px;
+    }
+
+    .introtext h1{
+        
+        font-size: 30px;
+        padding: 0%;
+        margin: 0%;
+    }
+    .introtext p{
+        
+        font-size: 18px;
+        text-align: center;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .login-signup{
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .ul-item{
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 0%;
+        margin: 0%;
+    }
+   
+    .subscriptions{
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .subscription-plan{
+        flex-wrap: wrap;
+    }
+
+    .subscription-plan .plan{
+        margin-top: 20px;
+    }
+
+    .mainbottom{
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+}
