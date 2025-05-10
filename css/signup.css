@@ -1,0 +1,57 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url("../Photos/library.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form {
+    width: 320px;
+    background-color: rgba(31, 28, 28, 0.95);
+    padding: 30px 20px;
+    border-radius: 20px;
+}
+
+.create-account {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 95%;
+    padding: 10px;
+    margin-top: 15px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+}
+
+.button {
+    padding: 10px 20px;
+    margin-top: 25px;
+    width: 100%;
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: white;
+}

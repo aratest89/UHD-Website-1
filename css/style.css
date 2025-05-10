@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    background-image: url("../Photos/library.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* Navbar */
+nav{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: black;
+    position: relative;
+    height: 70px;
+}
+
+.logo{
+    color: yellow;
+}
+
+.logo:hover{
+    color: white;
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: yellow;
+}
+
+nav ul li a:hover{
+    color: white;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu-icon img{
+    font-size: 30px;
+}
+
+/* Intro Section */
+.main-introtext-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+    text-align: center;
+    gap: 40px;
+}
+
+.introtext h1 {
+    color: yellow;
+    font-size: 36px;
+}
+
+.introtext p {
+    color: white;
+    font-size: 18px;
+}
+
+.login-signup h2 {
+    color: yellow;
+}
+
+.button {
+    background-color: yellow;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.button a {
+    text-decoration: none;
+    color: black;
+}
+
+.button:hover {
+    background-color: white;
+}
+
+/* Best of 2025 */
+.main-Bestof2025 {
+    padding: 50px 20px;
+}
+
+.main-Bestof2025 h2 {
+    color: yellow;
+    margin-left: 83px;
+    margin-bottom: 10px;
+}
+
+.ul-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.item img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.item h2 {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease;
+}
+
+.item.selected {
+    border: 3px solid yellow;
+    transform: scale(1.1);
+}
+
+/* Subscriptions */
+.subscriptions {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.subscriptions h2 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.subscription-plan {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.plan {
+    width: 280px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.plan h3 {
+    font-size: 22px;
+}
+
+.plan p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+.plan button {
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.plan button:hover {
+    background-color: white;
+}
+
+.standard {
+    background-color: aqua;
+}
+
+.premium {
+    background-color: gold;
+}
+
+.vip {
+    background-color: #eee;
+}
+
+/* Bottom Section */
+.mainbottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    padding: 40px 20px;
+    color: yellow;
+}
+
+.bottom-copywrite {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bottom-navbar,
+.socialmedia {
+    flex: 1;
+    min-width: 200px;
+}
+
+.bottom-navbar h3,
+.socialmedia h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.bottom-navbar ul,
+.socialmedia ul {
+    list-style: none;
+    padding: 0;
+}
+
+.bottom-navbar li,
+.socialmedia li {
+    margin-bottom: 8px;
+}
+
+.bottom-navbar a,
+.socialmedia a {
+    text-decoration: none;
+    color: yellow;
+}
+
+.bottom-navbar a:hover,
+.socialmedia a:hover {
+    color: white;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  
+    nav{
+        justify-content: space-between;
+    }
+    
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: black;
+        gap: 0;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 20px;
+        padding-top: 0;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+
+    .main-Bestof2025 h2 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .ul-item {
+        justify-content: center;
+    }
+
+    .subscription-plan {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .plan {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .mainbottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottom-navbar,
+    .socialmedia {
+        min-width: 100%;
+        text-align: center;
+    }
+}
+

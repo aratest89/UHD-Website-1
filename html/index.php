@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Book">
+    <meta name="description" content="A website for reading Books">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>BookStore</title>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <h1>BookStore</h1>
+        </div>
+        <ul id="menuList">
+            <li><a href="../html/index.php">Home</a></li>
+            <li><a href="../html/about.php">About</a></li>
+            <li><a href="../html/services.php">Services</a></li>
+            <li><a href="../html/contact.php">Contact</a></li>
+        </ul>
+        <div class="menu-icon">
+            <img src="../Photos/open_menu.png" alt="Open Menu"  onclick="toggleMenu()">     
+        </div>
+    </nav>
+
+
+<div class="main-introtext-buttons">
+    <div class="introtext">
+        <h1>Welcome to BookStore</h1>
+        <p>Your ultimate destination for books across all genres.<br>
+        Explore new releases, bestsellers, and hidden gems.<br>
+        Whether you're into fiction, non-fiction, fantasy,<br>
+        or self-development, we have something for everyone.</p>
+    </div>
+
+    <div class="login-signup">
+        <h2>Start your literary adventure with us today!</h2>
+        <br>
+        <button class="button"><a href="../html/login.html">Login</a></button>
+        <button class="button"><a href="../html/signup.html">Signup</a></button>
+    </div>
+</div>
+
+<div class="main-Bestof2025">
+    <h2 class="Bestof2025">Best of 2025</h2>
+    <ul class="ul-item">
+        <li class="item item1">
+            <img class="book1" src="../ul-list-1/book1 james.jpg" alt="">
+            <h2>James</h2>
+        </li>
+        <li class="item item2">
+            <img class="book2" src="../ul-list-1/book2 The Son of Man.jpg" alt="">
+            <h2>The Son<br>of Man</h2>
+        </li>
+        <li class="item item2">
+            <img class="book2" src="../ul-list-1/book3 All Fours.jpg" alt="">
+            <h2>All Fours</h2>
+        </li>
+        <li class="item item2">
+            <img class="book2" src="../ul-list-1/book4 Now or Never.jpg" alt="">
+            <h2>Now or Never</h2>
+        </li>
+        <li class="item item2">
+            <img class="book2" src="../ul-list-1/book5 The Hunter.jpg" alt="">
+            <h2>The Hunter</h2>
+        </li>
+        <li class="item item2">
+            <img class="book2" src="../ul-list-1/book6 My Friends.jpg" alt="">
+            <h2>My Friends</h2>
+        </li>
+        <li class="item item2">
+            <img class="book2" src="../ul-list-1/book7 Soldiers and Kings.jpg" alt="">
+            <h2>Soldiers and Kings</h2>
+        </li>
+    </ul>
+</div>
+
+<div class="subscriptions">
+    <h2>Choose Your Subscription</h2>
+    <div class="subscription-plan">
+        <div class="plan standard">
+            <h3>Standard</h3>
+            <p>$10/month</p>
+            <ul>
+                <li>Access to all books</li>
+                <li>Standard discounts</li>
+                <li>Monthly newsletter</li>
+            </ul>
+            <button class="button-standard">Subscribe</button>
+        </div>
+
+        <div class="plan premium">
+            <h3>Premium Plan</h3>
+            <p>$20/month</p>
+            <ul>
+                <li>Everything in Basic</li>
+                <li>Exclusive discounts</li>
+                <li>Early access to new books</li>
+                <li>Access to events</li>
+            </ul>
+            <button>Subscribe</button>
+        </div>
+
+        <div class="plan vip">
+            <h3>VIP Plan</h3>
+            <p>$30/month</p>
+            <ul>
+                <li>Everything in Premium</li>
+                <li>Free delivery on all orders</li>
+                <li>VIP book releases</li>
+                <li>Personalized book recommendations</li>
+            </ul>
+            <button>Subscribe</button>
+        </div>
+    </div>
+</div>
+
+<div class="mainbottom">
+    <div class="bottom-copywrite">
+        <p class="copywrite">&copy; 2025 BookStore. All rights reserved.</p>
+    </div>
+
+    <div class="bottom-navbar">
+        <h3>Quick Links</h3>
+        <ul class="ul-bottom1">
+            <li class="li-bottom1"><a href="../html/index.html">Home</a></li>
+            <li class="li-bottom1"><a href="../html/about.html">About</a></li>
+            <li class="li-bottom1"><a href="../html/services.html">Services</a></li>
+            <li class="li-bottom1"><a href="../html/contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="socialmedia">
+        <h3>Follow Us</h3>
+        <ul class="ul-bottom2">
+            <li class="li-bottom2"><a href="">Facebook</a></li>
+            <li class="li-bottom2"><a href="">Instagram</a></li>
+            <li class="li-bottom2"><a href="">Twitter</a></li>
+        </ul>
+    </div>
+</div>
+
+<script src="../js/index.js"></script>
+
+
+</body>
+</html>
